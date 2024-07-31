@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://10.1.20.6:5432/mydb?currentSchema=myschema
+    username: adlpcxhub
+    password: adlp-cxhub1-2
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+cors:
+  allowed: http://localhost:4200
