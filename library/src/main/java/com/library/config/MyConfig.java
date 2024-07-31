@@ -20,8 +20,8 @@ class MyConfig {
     @Bean
     public UserDetailsService userDetailsService() {
         UserDetails userDetails = User.builder().
-                    username("2313812063@geu.ac.in")
-                    .password(passwordEncoder().encode("shubham@321")).roles("ADMIN").
+                    username("shubham")
+                    .password(passwordEncoder().encode("shubham")).roles("ADMIN").
                 build();
         return new InMemoryUserDetailsManager(userDetails);
     }
