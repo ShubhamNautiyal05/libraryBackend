@@ -13,4 +13,6 @@ public interface IssueService {
     Issue createIssue(CreateIssueRequest issue);
 
     Issue returnBook(Long id);
+
+    String deleteRecord(Long id);
 }

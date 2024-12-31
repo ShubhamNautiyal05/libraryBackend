@@ -36,4 +36,9 @@ public class IssueController {
     public Issue returnBook(@PathVariable Long id) {
         return issueService.returnBook(id);
     }
+
+    @DeleteMapping("/{id}")
+    public String deleteRecord(@PathVariable Long id){
+        return issueService.deleteRecord(id);
+    }
 }

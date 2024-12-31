@@ -67,4 +67,16 @@ public class IssueServiceImpl implements IssueService {
         }
         return null;
     }
+
+
+    @Override
+    public String deleteRecord(Long id){
+        try {
+            issueRepository.deleteById(id);
+            return "Record deleted successfully";
+        } catch (Exception e){
+            e.printStackTrace();
+            return "Some error occurred during delete record";
+        }
+    }
 }
